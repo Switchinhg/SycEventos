@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+
+}
+/**/
+.grid-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(auto, auto);
+    grid-template-areas: 
+    "header header"
+    "carrusel carrusel"
+    "hr hr"
+    "porqeleg porqeleg"
+    "hr2 hr2"
+    "tufiesta tufiesta"
+    "hr3 hr3"
+    "estamos-padre estamos-padre"
+    "footer footer";
+}
+
+header{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.carrusel-main{
+    grid-area: carrusel;
+}
+
+#hr1{
+    grid-area: hr;
+}
+#hr2{
+    grid-area: hr2;
+}
+#hr3{
+    grid-area: hr3;
+}
+.porqeleg{
+    grid-area: porqeleg;
+}
+.tufiesta{
+    grid-area: tufiesta;
+}
+.estamos-padre{
+    grid-area: estamos-padre;
+}
+
+footer{
+    grid-area: footer;
+}
+
+h1{
+    font-weight: normal;
+}
+
+.titpaquete{
+    font-family: 'Dancing Script', cursive;
+    margin-right: 0.5rem;
+}
+
+
+
+.navUl li{
+    display: inline-block;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-top: 2px;
+}
+
+.navLink{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 1.5rem;
+    
+}
+
+.navUl a{
+    font-weight: bold;
+}
+.navLink:hover{
+    background-color: #d0b8ac;
+    border-radius: 5px;
+    color: white;
+}
+
+.center-text{
+    text-align: center;
+    margin:  0 auto;
+    padding-bottom: 2rem;
+}
+
+
+
+#carrusel-img {
+    
+    width: 100vw;
+    
+}
+
+.carrusel-main p{
+    
+    position:relative;
+    background-color: #d0b8aca9;
+    color: white;
+    font-size: 4rem;
+    top: -32vw;
+    margin-bottom: 2rem;
+    
+    
+
+
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+hr{
+    width: 80vw;
+    text-align: center;
+    margin: 0 auto;
+    height: 2px;
+    background-color: black;
+
+}
+
+
+.sec-padre{
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin:5rem 15vh ;
+    
+}
+.sec-padre p{
+    font-size: 1.4rem;
+}
+.sec-padre img{
+    width: 100vw;
+
+
+}
+.sec-padre iframe{
+    width: 100vw;
+    height: 50vh;
+}
+
+.estamos-padre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+.estamos-padre iframe{
+    width: 60%;
+    height: 70vh;
+}
+.estamos-padre h1{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-top: 3rem;
+}
+
+.eleg-text {
+    text-align: center;
+    
+}
+.eleg-text p{
+    padding-top: 2rem;
+}
+#arreglar{
+    padding: 0 1rem;
+}
+.serv-caja p{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.serv-caja{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    background-color: #f3d8c7;
+}
+.serv-caja h1{
+    font-family: 'Dancing Script', cursive;
+}
+
+.caja-size{
+    width: 500px;
+    max-height: 361px;
+    min-height: 255px;
+    padding: 2rem;
+    overflow: hidden;
+}
+.mainflex{
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    
+}
+p{
+    padding-right: 1rem;
+}
+.titulo{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding: 0.5rem 0.5rem;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+
+    
+}
+.grande{
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+.chico{
+    font-size: 2.5rem;
+}
+
+.titulo p{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.nuestrosServicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+
+.nuestrosServicios h1{
+    padding: 2rem;
+}
+
+.servicios-lista{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    list-style-type: none;
+    max-height: 200px;
+    overflow: hidden;
+    text-align: center;
+    
+
+}
+.servicios-lista__hijo{
+    padding-bottom: 1rem;
+    
+}
+
+.gal-item img:hover{
+    filter: blur(2px); 
+
+}
+
+.gal-item h1{
+    font-family: 'Dancing Script', cursive;
+    padding-top: 2rem;
+    font-size: 2.2rem;
+    text-align: center;
+
+}
+
+.likes{
+    position:relative;
+    color: white;
+    font-size: 2rem;
+    top: -14rem;
+    left: 12rem;
+    display: flex;
+    filter: drop-shadow( 1px 1px 5px black);
+    max-width: 200px;
+    visibility: hidden;
+}
+.gal-item img:hover + .likes {
+    visibility: visible;
+}
+.likes p {
+    padding-left: 1.5rem;
+}
+
+
+
+.gal-item h1{
+    position: relative;
+    top: -5rem;
+    font-weight: bold;
+    background-color: #d0b8ac;
+    color: white;
+    padding-left: 2rem;
+    padding-bottom: 2.4rem;
+    
+}
+.txtGrnde{
+    font-size: 1.5rem;
+
+}
+.centrar p{
+    max-width: 500px;
+    
+}
+.equipo-uno{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.nombre {
+    margin-top: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+.equipo-uno p{
+    text-align: center;
+    
+
+}
+.equipo-dos{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem;
+}
+
+
+.equipo-dos p{
+    text-align: center;
+}
+
+
+
+.contact-imagenes{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding:2rem;
+    font-size: 2rem;
+    gap: 10rem;
+    position: relative;
+    left: -2rem;
+    
+    
+}
+
+.form {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    position: relative;
+    left: 1rem;
+    
+}
+
+input:focus, textarea:focus{
+    outline-style:solid ;
+    outline-color: rgb(44, 190, 201) ;
+    box-shadow: 0px 0px 5px black;
+}
+
+textarea{
+    margin: 1px;
+}
+.input  {
+    margin-top:1rem;
+    margin-bottom: 2.5rem;
+    margin-left: 1px;
+    padding: 0.5rem;
+    width: 19.1rem;
+    margin-right: 2rem;
+    font-size: 1rem;
+    
+}
+input[type=number] {
+    appearance: textfield;
+
+}
+
+.button{
+    background-color: white;
+    border: solid black 1px;
+    border-color: #d0b8ac;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+
+}
+.butenviar{
+    margin: 3rem 0;
+    position: relative;
+    left: 18rem;
+}
+.button:hover{
+    background-color: #d0b8ac;
+  
+}
+
+.contacto-info{
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    
+    
+    font-size: 1.5rem;
+    gap: 5rem;
+    
+}
+.contact-imagenes i{
+    
+    border-radius: 50%;
+    padding:1rem;
+    color: white;
+    background-color: #d0b8ac;
+    margin-left: 4rem;
+    
+    
+}
+
+.contacto-imgs p{
+    font-size: 1.5rem;
+
+}
+
+
+footer hr{
+    
+    width: 100%;
+}
+
+.footer {
+    
+    display: flex;
+    text-align: center;
+    gap: 2rem;
+    justify-content: space-around;
+    padding: 2rem;
+    font-size: 1.5rem;
+    
+}
+.footer ul {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+.footer a:hover{
+    color: #d0b8ac;
+    
+}
+.footer span{
+    color: #d0b8ac;
+    font-weight: bold;
+    
+}
+
+.footer span:hover{
+    color: #f3d8c7;
+}
+
+.clickeado{
+    background-color: #f3d8c7;
+    border-radius: 5px;
+    color: white;
+    
+}
+
+@media only screen and (max-width: 400px){
+    #carrusel-img{
+        position: relative;
+        left: -10rem;
+        width: 200%;
+    }
+    .carrusel-main p {
+    
+        position:relative;
+        background-color: #d0b8aca9;
+        color: white;
+        font-size: 2.5rem;
+        top: -65vw;
+        margin-bottom: 0px;
+        }
+
+    .carrusel-main{
+        max-height: 500px;
+        overflow: hidden;
+    }
+    .sec-padre{
+        
+        flex-direction: column;
+        padding: 1rem;
+        gap:2rem;
+        margin:2rem 1rem ;
+
+    }
+    .tufiesta{
+        flex-direction: column-reverse;
+
+    }
+    .eleg-text{
+        min-height: 310px;
+        
+    }
+    
+    .sec-padre iframe{
+        
+        height: 25vh;
+        
+    }
+
+    .estamos-padre h1{
+        padding-top: 0;
+        padding-bottom: 5rem;
+        margin-top: 3rem;
+    }
+    
+    .estamos-padre iframe{
+
+        width: 350px;
+        height: 350px;
+    }
+
+    
+
+    .footer{
+        
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+}
+
+@media only screen and (min-width: 401px) and (max-width: 768px){
+    #carrusel-img{
+        position: relative;
+        top: -10rem;
+        left: -20rem;
+        width: 200%;
+        
+    }
+    .carrusel-main p {
+    
+        position:relative;
+        background-color: #d0b8aca9;
+        color: white;
+        font-size: 2.5rem;
+        top: -90vw;
+        margin-bottom: 0px;
+        }
+
+    
+    .carrusel-main{
+        max-height: 500px;
+        overflow: hidden;
+    }
+    .sec-padre{
+        
+        flex-direction: column;
+        padding: 1rem;
+        gap:2rem;
+        margin:2rem 1rem ;
+
+    }
+    .tufiesta{
+        flex-direction: column-reverse;
+
+    }
+    .eleg-text{
+        min-height: 159px;
+        
+    }
+    
+    .sec-padre iframe{
+        
+        height: 25vh;
+        
+    }
+
+    .estamos-padre h1{
+        padding-top: 0;
+        padding-bottom: 5rem;
+        margin-top: 3rem;
+    }
+    
+    .estamos-padre iframe{
+
+        width: 350px;
+        height: 350px;
+    }
+
+
+    .footer{
+        
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
