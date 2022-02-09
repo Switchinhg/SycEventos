@@ -51,10 +51,10 @@ header{
     margin-bottom: 50px;
     text-align: center;
 }
-header nav a img{
+.skewer{
     transition: transform 1s;
 }
-header nav a img:hover{
+.skewer:hover{
     transform: skew(-10deg);
 }
 
