@@ -51,6 +51,12 @@ header{
     margin-bottom: 50px;
     text-align: center;
 }
+header nav a img{
+    transition: transform 1s;
+}
+header nav a img:hover{
+    transform: skew(-10deg);
+}
 
 .carrusel-main{
     grid-area: carrusel;
@@ -112,6 +118,7 @@ h1{
     background-color: #d0b8ac;
     border-radius: 5px;
     color: white;
+
 }
 
 .center-text{
@@ -545,6 +552,7 @@ footer hr{
     color: white;
     
 }
+
 
 @media only screen and (max-width: 400px){
     #carrusel-img{
