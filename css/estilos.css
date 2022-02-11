@@ -51,6 +51,12 @@ header{
     margin-bottom: 50px;
     text-align: center;
 }
+.skewer{
+    transition: transform 1s;
+}
+.skewer:hover{
+    transform: skew(-10deg);
+}
 
 .carrusel-main{
     grid-area: carrusel;
@@ -112,6 +118,7 @@ h1{
     background-color: #d0b8ac;
     border-radius: 5px;
     color: white;
+
 }
 
 .center-text{
@@ -461,6 +468,7 @@ input[type=number] {
     border-radius: 5px;
     margin: 1rem;
     padding: 0.5rem 1rem;
+    cursor: pointer;
 
 }
 .butenviar{
@@ -545,6 +553,7 @@ footer hr{
     color: white;
     
 }
+
 
 @media only screen and (max-width: 400px){
     #carrusel-img{

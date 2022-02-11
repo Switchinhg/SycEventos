@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Favicon para remplazar-->
     <link rel="shortcut icon" href="./img/stars.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/estilos.css">
     <title>Inicio - Syc Eventos</title>
 </head>
+
+
+  
 <body>
+    
 
     <div class="grid-main">
         
@@ -19,7 +24,7 @@
     <header> 
         <nav>
                 <!--Logo clickeable a index.html-->
-            <a id="arriba" href="./index.html"><img src="./img/logo.png" alt="LOGO"></a>  
+            <a id="arriba" href="./index.html"><img class="skewer" src="./img/logo.png" alt="LOGO"></a>  
 
             <ul class="navUl">
 
@@ -73,7 +78,7 @@
         
         <!--¿Por que elegirnos?-->
 
-        <div class="sec-padre porqeleg">
+        <div class="sec-padre porqeleg"data-aos="fade-up">
             <div class="eleg-text ">
                 <h1 class="titulo">¿Por qué elegirnos?</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos pariatur in ut alias nemo voluptas ratione eveniet blanditiis non molestias.</p>
@@ -90,7 +95,7 @@
 
         <!--Tu fiesta o reunion, increibles-->
 
-        <div class="sec-padre tufiesta">
+        <div class="sec-padre tufiesta"data-aos="fade-up">
             
             <iframe class="crecer" width="560" height="315" src="https://www.youtube.com/embed/kqUUPueWUxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -140,6 +145,9 @@
         </div>
     </footer>
 </div>
-    
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
