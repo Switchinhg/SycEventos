@@ -540,13 +540,7 @@ input[type=number] {
     background-color: #d0b8ac;
     border: #d0b8ac 1px solid;
 }
-.btn-check:focus + .btn-primary, .btn-primary:focus {
-    color: black;
-    background-color: white;
-    border-color: black;
-    box-shadow: 1px 1px 1px 1px black;
-    cursor: pointer;
-}
+
 .ponerse1{
     position: relative;
     left: 20rem;
@@ -566,11 +560,23 @@ input[type=number] {
 }
 
 
-
+.cntContendor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+}
 
 
 .cntContendor a{
     color: black;
+
+}
+.btnmodal{
+    text-decoration: none;
+    color: black;
+    position:relative;
+    top:1px;
 
 }
 .cntContendor i{
@@ -582,6 +588,27 @@ input[type=number] {
 .cntContendor p{
     font-size: 1.5rem;
 }
+
+.compracontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: left;
+    margin-bottom: 10rem;
+    width: 600px;
+    margin: 0 auto;
+
+}
+.compra-serv{
+    display: flex;
+}
+
+.compra-serv label{
+    padding-right: 1rem;
+    
+}
+
+
 .dir {
     display: flex;
     flex-direction: column;
@@ -600,6 +627,7 @@ input[type=number] {
     align-items: center;
     
 }
+
 
 .contacto-imgs p{
     font-size: 1.5rem;
