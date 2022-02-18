@@ -1,0 +1,43 @@
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+.sec-padre{
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin:5rem 15vh ;
+    
+}
+.sec-padre p{
+    font-size: 1.4rem;
+}
+.sec-padre img{
+    width: 100vw;
+
+
+}
+.sec-padre iframe{
+    width: 100vw;
+    height: 50vh;
+}
+
+.estamos-padre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+.estamos-padre iframe{
+    width: 60%;
+    height: 70vh;
+}
+.estamos-padre h1{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-top: 3rem;
+}

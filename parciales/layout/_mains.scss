@@ -1,0 +1,315 @@
+@import "../general/variables";
+
+    #hr1{
+        width: 80vw;
+        text-align: center;
+        margin: 0 auto;
+        height: 2px;
+        background-color: black;
+
+    }
+
+    #hr2{
+        width: 80vw;
+        text-align: center;
+        margin: 0 auto;
+        height: 2px;
+        background-color: black;
+
+    }
+    #hr3{
+        width: 80vw;
+        text-align: center;
+        margin: 0 auto;
+        height: 2px;
+        background-color: black;
+
+    }
+
+    .carousel-caption{
+        bottom: 43%;
+        background-color: rgba(208, 184, 172, 0.6);
+        width: 100%;
+        left: 1px;
+    }
+    .carrusel-main{
+        margin-bottom: 3rem;
+    }
+    .carousel-caption h1{
+        color: rgba(0, 0, 0, 0.699);
+        font-weight:bolder;
+    }
+    .carousel-caption span{
+        color: wheat;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.699);
+        
+    }
+    .carousel-caption h2{
+        color: rgba(0, 0, 0, 0.699);
+    }
+
+    .flex{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 5rem;
+    }
+    .sec-padre{
+        padding: 2rem;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        margin:5rem 15vh ;
+        
+    }
+    .eleg-text {
+        text-align: center;
+        p{
+            padding-top: 2rem;
+        }
+        
+    }
+    .sec-padre p{
+        font-size: 1.4rem;
+    }
+    .sec-padre img{
+        width: 100vw;
+    
+    
+    }
+    .sec-padre iframe{
+        width: 100vw;
+        height: 50vh;
+    }
+    
+    .estamos-padre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5rem;
+    }
+    
+    .estamos-padre iframe{
+        width: 60%;
+        height: 70vh;
+    }
+    .estamos-padre h1{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        margin-top: 3rem;
+    }
+
+    .nuestrosServicios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    
+    }
+    .nuestrosServicios h1{
+        padding: 2rem;
+    }
+    .nuestrosServicios p {
+        text-align: center;
+    }
+
+    .mainflex2{
+        display: flex;
+        
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 5rem 0.3rem;
+    }
+    .titpaquete{
+        font-family: 'Dancing Script', cursive;
+        margin-left: 0.5rem;
+    }
+    
+    .pleft{
+        padding-left: 5rem;
+    }
+    .marginbottom{
+        margin-bottom: 5rem;
+    }
+    .likes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position:relative;
+        font-size: 2rem;
+        top: -13rem;
+        color: white;
+        filter: drop-shadow( 1px 1px 5px black);
+        max-width: 150px;
+        margin: auto;
+        visibility: hidden;
+        i{
+            position: relative;
+            top: -.5rem;
+            padding: .2rem;
+        }
+    }
+
+    .gal-item{
+        img:hover{
+            filter: blur(2px); 
+        
+        }
+        h1{
+            font-family: 'Dancing Script', cursive;
+            font-weight: bold;
+            padding-top: 2rem;
+            font-size: 2.2rem;
+            position: relative;
+            text-align: center;
+            top: -5rem;
+            background-color: $coloroscuro;
+            color: white;
+            padding-bottom: 2.4rem;
+        
+        }
+        img:hover + .likes {
+            visibility: visible;
+        }
+        p {
+            padding-left: 1.5rem;
+        }
+        img{
+            width: 100%;
+        }
+    
+    }
+
+    .mainflex{
+        display: flex;
+        gap: 2.5rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 5rem 0.3rem;
+        
+    }
+    .txtGrnde{
+        font-size: 1.5rem;
+    
+    }
+
+    .centrar p{
+        max-width: 500px;
+        
+    }
+    .equipo-uno{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        margin: 2rem;
+        p{
+            text-align: center;
+            
+        
+        }
+        div{
+            margin: 0 2rem;
+            
+        }
+    }
+    .nombre {
+        margin-top: 1rem;
+        font-weight: bold;
+        margin-bottom: 0.4rem;
+    }
+    .equipo-dos{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        margin: 2rem;
+
+        p{
+            text-align: center;
+        }
+        div{
+            margin: 0 2rem;
+        }
+    }
+
+    .cntContendor{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5rem;
+        p{
+            margin-top: 1.5rem;
+            font-size: 1.5rem;
+        }
+        a{
+            color: black;
+        
+        }
+        i{
+            background-color: $coloroscuro;
+            padding: 1.2rem;
+            border-radius: 50%;
+            font-size: 1.5rem;
+        }
+    }
+    .dir {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .telf {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .mail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .form {
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        position: relative;
+        left: 1rem;
+        
+    }
+
+    .center-text{
+        text-align: center;
+        margin:  0 auto;
+        padding-bottom: 2rem;
+    }
+    textarea{
+    
+        
+        width: 648px;
+        height: 150px;
+        
+
+    margin: 1px;
+}
+.compracontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: left;
+    margin-bottom: 10rem;
+    width: 600px;
+    margin: 0 auto;
+
+}
+.compra-serv{
+    display: flex;
+    label{
+        padding-right: 1rem;
+        
+    }
+}

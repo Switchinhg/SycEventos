@@ -1,0 +1,45 @@
+@import "../general/variables";
+header{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    margin-bottom: 50px;
+    text-align: center;
+
+    .clickeado{
+    
+        background-color: $colorclaro;
+        border-radius: 5px;
+        color: white;
+        
+    }
+    .navUl li{
+        display: inline-block;
+        padding-top:10px;
+        padding-bottom: 10px;
+        margin-top: 2px;  
+        line-height: 1.2; 
+    }
+    
+    .navLink{
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        font-size: 1.5rem;
+        
+    }
+    
+    .navUl a{
+        font-weight: bold;
+    }
+    .navLink:hover{
+        background-color: $coloroscuro;
+        border-radius: 5px;
+        color: white;
+    
+    }
+
+}

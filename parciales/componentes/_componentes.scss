@@ -1,0 +1,139 @@
+@import "../general/variables";
+
+.grid-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(auto, auto);
+    grid-template-areas: 
+    "header header"
+    "carrusel carrusel"
+    "hr hr"
+    "porqeleg porqeleg"
+    "hr2 hr2"
+    "tufiesta tufiesta"
+    "hr3 hr3"
+    "estamos-padre estamos-padre"
+    "footer footer";
+}
+.grid-paquetes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(auto,auto);
+    grid-template-areas: 
+    "header header"
+    "titulos titulos"
+    "paquetes paquetes"
+    "footer footer";
+}
+
+.titulos{
+    grid-area: titulos;
+}
+.paquetes{
+    grid-area: paquetes;
+}
+.carrusel-main{
+    grid-area: carrusel;
+}
+
+#hr1{
+    grid-area: hr;
+}
+#hr2{
+    grid-area: hr2;
+}
+#hr3{
+    grid-area: hr3;
+}
+.porqeleg{
+    grid-area: porqeleg;
+}
+.tufiesta{
+    grid-area: tufiesta;
+}
+.estamos-padre{
+    grid-area: estamos-padre;
+}
+footer{
+    grid-area: footer;
+}
+.boton{
+    color: black;
+    background-color: white;
+    border: solid black 1px;
+    border-color: $coloroscuro;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    position: relative;
+    top: -1rem;
+
+}
+.boton:hover{
+    background-color: $coloroscuro;
+    
+}
+
+.modal-backdrop {
+    z-index: -1;
+    background-color: transparent;
+    
+}
+.modal-content{
+    left: 0.5rem;
+}
+.btnmodal{
+    text-decoration: none;
+    color: black;
+    position:relative;
+    top:1px;
+}
+.btnmodal:hover{
+    color:black;
+}
+
+
+
+.skewer{
+    transition: transform 1s;
+}
+.skewer:hover{
+    transform: skew(-10deg);
+}
+
+hr{
+    width: 80vw;
+    text-align: center;
+    margin: 0 auto;
+    height: 2px;
+    background-color: black;
+
+}
+
+.input  {
+    margin-top:1rem;
+    margin-bottom: 2.5rem;
+    margin-left: 1px;
+    padding: 0.5rem;
+    width: 19.1rem;
+    margin-right: 2rem;
+    font-size: 1rem;
+    
+    
+}
+input[type=number] {
+    appearance: textfield;
+
+}
+.butenviar{
+    margin: 3rem 0;
+    position: relative;
+    left: 18rem;
+}
+
+input:focus, textarea:focus{
+    outline-style:solid ;
+    
+    box-shadow: 0px 0px 5px black;
+}

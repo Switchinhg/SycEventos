@@ -1,0 +1,115 @@
+@import "./variables";
+.titulo{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding: 0.5rem 0.5rem;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+
+    p{
+        padding-top: 2rem;
+        font-size: 1.5rem;
+    }
+    
+}
+
+.serv-caja{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0.5rem;
+    background-color: $colorclaro;
+    h1{
+        font-family: 'Dancing Script', cursive;
+    }
+    p{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .servicios-lista{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        list-style-type: none;
+        max-height: 200px;
+        overflow: hidden;
+        text-align: center;
+        .servicios-lista__hijo{
+            padding-bottom: 1rem;
+            
+        }
+    
+    }
+}
+h1{
+    font-weight: normal;
+}
+
+.caja-size{
+    width: 500px;
+    max-height: 361px;
+    min-height: 255px;
+    padding: 2rem ;
+    overflow: hidden;
+    margin:1.5rem;
+}
+.sinp{
+    padding-left: 0;
+}
+
+p{
+    padding-right: 1rem;
+}
+
+.grande{
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+.chico{
+    font-size: 2.5rem;
+}
+
+
+.footer {
+    
+    display: flex;
+    text-align: center;
+    gap: 2rem;
+    justify-content: space-around;
+    padding: 2rem;
+    font-size: 1.5rem;
+    
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    ul li{
+        margin-left: 2rem;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        color: $coloroscuro;
+        
+    }
+    span{
+        color: $coloroscuro;
+        font-weight: bold;
+        
+    }
+    
+    span:hover{
+        color: $colorclaro;
+    }
+
+}
+footer hr{
+    
+        width: 100%;
+    }

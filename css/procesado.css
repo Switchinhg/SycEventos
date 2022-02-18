@@ -1,0 +1,735 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+.grid-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(auto, auto);
+  grid-template-areas: "header header" "carrusel carrusel" "hr hr" "porqeleg porqeleg" "hr2 hr2" "tufiesta tufiesta" "hr3 hr3" "estamos-padre estamos-padre" "footer footer"; }
+
+.grid-paquetes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(auto, auto);
+  grid-template-areas: "header header" "titulos titulos" "paquetes paquetes" "footer footer"; }
+
+.titulos {
+  grid-area: titulos; }
+
+.paquetes {
+  grid-area: paquetes; }
+
+.carrusel-main {
+  grid-area: carrusel; }
+
+#hr1 {
+  grid-area: hr; }
+
+#hr2 {
+  grid-area: hr2; }
+
+#hr3 {
+  grid-area: hr3; }
+
+.porqeleg {
+  grid-area: porqeleg; }
+
+.tufiesta {
+  grid-area: tufiesta; }
+
+.estamos-padre {
+  grid-area: estamos-padre; }
+
+footer {
+  grid-area: footer; }
+
+.boton {
+  color: black;
+  background-color: white;
+  border: solid black 1px;
+  border-color: #d0b8ac;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  position: relative;
+  top: -1rem; }
+
+.boton:hover {
+  background-color: #d0b8ac; }
+
+.modal-backdrop {
+  z-index: -1;
+  background-color: transparent; }
+
+.modal-content {
+  left: 0.5rem; }
+
+.btnmodal {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  top: 1px; }
+
+.btnmodal:hover {
+  color: black; }
+
+.skewer {
+  transition: transform 1s; }
+
+.skewer:hover {
+  transform: skew(-10deg); }
+
+hr {
+  width: 80vw;
+  text-align: center;
+  margin: 0 auto;
+  height: 2px;
+  background-color: black; }
+
+.input {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  margin-left: 1px;
+  padding: 0.5rem;
+  width: 19.1rem;
+  margin-right: 2rem;
+  font-size: 1rem; }
+
+input[type=number] {
+  appearance: textfield; }
+
+.butenviar {
+  margin: 3rem 0;
+  position: relative;
+  left: 18rem; }
+
+input:focus, textarea:focus {
+  outline-style: solid;
+  box-shadow: 0px 0px 5px black; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: header;
+  margin-bottom: 50px;
+  text-align: center; }
+  header .clickeado {
+    background-color: #f3d8c7;
+    border-radius: 5px;
+    color: white; }
+  header .navUl li {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 2px;
+    line-height: 1.2; }
+  header .navLink {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 1.5rem; }
+  header .navUl a {
+    font-weight: bold; }
+  header .navLink:hover {
+    background-color: #d0b8ac;
+    border-radius: 5px;
+    color: white; }
+
+#hr1 {
+  width: 80vw;
+  text-align: center;
+  margin: 0 auto;
+  height: 2px;
+  background-color: black; }
+
+#hr2 {
+  width: 80vw;
+  text-align: center;
+  margin: 0 auto;
+  height: 2px;
+  background-color: black; }
+
+#hr3 {
+  width: 80vw;
+  text-align: center;
+  margin: 0 auto;
+  height: 2px;
+  background-color: black; }
+
+.carousel-caption {
+  bottom: 43%;
+  background-color: rgba(208, 184, 172, 0.6);
+  width: 100%;
+  left: 1px; }
+
+.carrusel-main {
+  margin-bottom: 3rem; }
+
+.carousel-caption h1 {
+  color: rgba(0, 0, 0, 0.699);
+  font-weight: bolder; }
+
+.carousel-caption span {
+  color: wheat;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.699); }
+
+.carousel-caption h2 {
+  color: rgba(0, 0, 0, 0.699); }
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5rem; }
+
+.sec-padre {
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 15vh; }
+
+.eleg-text {
+  text-align: center; }
+  .eleg-text p {
+    padding-top: 2rem; }
+
+.sec-padre p {
+  font-size: 1.4rem; }
+
+.sec-padre img {
+  width: 100vw; }
+
+.sec-padre iframe {
+  width: 100vw;
+  height: 50vh; }
+
+.estamos-padre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem; }
+
+.estamos-padre iframe {
+  width: 60%;
+  height: 70vh; }
+
+.estamos-padre h1 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-top: 3rem; }
+
+.nuestrosServicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.nuestrosServicios h1 {
+  padding: 2rem; }
+
+.nuestrosServicios p {
+  text-align: center; }
+
+.mainflex2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0.3rem; }
+
+.titpaquete {
+  font-family: 'Dancing Script', cursive;
+  margin-left: 0.5rem; }
+
+.pleft {
+  padding-left: 5rem; }
+
+.marginbottom {
+  margin-bottom: 5rem; }
+
+.likes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 2rem;
+  top: -13rem;
+  color: white;
+  filter: drop-shadow(1px 1px 5px black);
+  max-width: 150px;
+  margin: auto;
+  visibility: hidden; }
+  .likes i {
+    position: relative;
+    top: -.5rem;
+    padding: .2rem; }
+
+.gal-item img:hover {
+  filter: blur(2px); }
+
+.gal-item h1 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  padding-top: 2rem;
+  font-size: 2.2rem;
+  position: relative;
+  text-align: center;
+  top: -5rem;
+  background-color: #d0b8ac;
+  color: white;
+  padding-bottom: 2.4rem; }
+
+.gal-item img:hover + .likes {
+  visibility: visible; }
+
+.gal-item p {
+  padding-left: 1.5rem; }
+
+.gal-item img {
+  width: 100%; }
+
+.mainflex {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0.3rem; }
+
+.txtGrnde {
+  font-size: 1.5rem; }
+
+.centrar p {
+  max-width: 500px; }
+
+.equipo-uno {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem; }
+  .equipo-uno p {
+    text-align: center; }
+  .equipo-uno div {
+    margin: 0 2rem; }
+
+.nombre {
+  margin-top: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem; }
+
+.equipo-dos {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem; }
+  .equipo-dos p {
+    text-align: center; }
+  .equipo-dos div {
+    margin: 0 2rem; }
+
+.cntContendor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem; }
+  .cntContendor p {
+    margin-top: 1.5rem;
+    font-size: 1.5rem; }
+  .cntContendor a {
+    color: black; }
+  .cntContendor i {
+    background-color: #d0b8ac;
+    padding: 1.2rem;
+    border-radius: 50%;
+    font-size: 1.5rem; }
+
+.dir {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.telf {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.mail {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.form {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  position: relative;
+  left: 1rem; }
+
+.center-text {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 2rem; }
+
+textarea {
+  width: 648px;
+  height: 150px;
+  margin: 1px; }
+
+.compracontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: left;
+  margin-bottom: 10rem;
+  width: 600px;
+  margin: 0 auto; }
+
+.compra-serv {
+  display: flex; }
+  .compra-serv label {
+    padding-right: 1rem; }
+
+.titulo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding: 0.5rem 0.5rem;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive; }
+  .titulo p {
+    padding-top: 2rem;
+    font-size: 1.5rem; }
+
+.serv-caja {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0.5rem;
+  background-color: #f3d8c7; }
+  .serv-caja h1 {
+    font-family: 'Dancing Script', cursive; }
+  .serv-caja p {
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+  .serv-caja .servicios-lista {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    list-style-type: none;
+    max-height: 200px;
+    overflow: hidden;
+    text-align: center; }
+    .serv-caja .servicios-lista .servicios-lista__hijo {
+      padding-bottom: 1rem; }
+
+h1 {
+  font-weight: normal; }
+
+.caja-size {
+  width: 500px;
+  max-height: 361px;
+  min-height: 255px;
+  padding: 2rem;
+  overflow: hidden;
+  margin: 1.5rem; }
+
+.sinp {
+  padding-left: 0; }
+
+p {
+  padding-right: 1rem; }
+
+.grande {
+  font-weight: normal;
+  font-size: 1.5rem; }
+
+.chico {
+  font-size: 2.5rem; }
+
+.footer {
+  display: flex;
+  text-align: center;
+  gap: 2rem;
+  justify-content: space-around;
+  padding: 2rem;
+  font-size: 1.5rem; }
+  .footer ul {
+    display: flex;
+    flex-wrap: wrap; }
+  .footer ul li {
+    margin-left: 2rem; }
+  .footer a {
+    text-decoration: none;
+    color: black; }
+  .footer a:hover {
+    color: #d0b8ac; }
+  .footer span {
+    color: #d0b8ac;
+    font-weight: bold; }
+  .footer span:hover {
+    color: #f3d8c7; }
+
+footer hr {
+  width: 100%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden; }
+
+@media only screen and (max-width: 400px) {
+  .img {
+    background-image: url("../img/casamiento.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh; }
+  .nuestrosServicios h1 {
+    text-align: center; }
+  .titulo p {
+    text-align: center; }
+  .sec-padre {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+    margin: 2rem 1rem; }
+  .cntContendor {
+    flex-direction: column; }
+  .dir, .telf, .mail, p {
+    padding-top: 1rem;
+    font-size: 1.5rem; }
+  .gal-item h1 {
+    font-family: 'Dancing Script', cursive;
+    padding-left: 5rem;
+    padding-top: 2rem;
+    font-size: 2rem;
+    text-align: left; }
+  .form {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    left: 12vw; }
+  textarea {
+    width: 305px;
+    height: 150px; }
+  .butenviar {
+    left: 7rem; }
+  .likes {
+    top: -14rem;
+    left: 8rem; }
+  .tufiesta {
+    flex-direction: column-reverse; }
+  .eleg-text {
+    min-height: 310px; }
+  .mainflex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+  .mainflex2 {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0.3rem;
+    text-align: center; }
+  .equipo-uno {
+    flex-direction: column;
+    align-items: center; }
+  .equipo-dos {
+    flex-direction: column;
+    align-items: center; }
+  .sec-padre iframe {
+    height: 25vh; }
+  .estamos-padre h1 {
+    padding-top: 0;
+    padding-bottom: 5rem;
+    margin-top: 3rem; }
+  .estamos-padre iframe {
+    width: 100vw;
+    height: calc(100vw/1.77); }
+  .footer {
+    flex-direction: column;
+    align-items: center; } }
+
+@media only screen and (min-width: 401px) and (max-width: 768px) {
+  .img {
+    background-image: url("../img/casamiento.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh; }
+  .mainflex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+  .mainflex2 {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0.3rem;
+    text-align: center; }
+  .equipo-uno {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .equipo-dos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .cntContendor {
+    flex-direction: column;
+    font-size: 1rem; }
+  .dir, .telf, .mail, p {
+    font-size: 1.5rem; }
+  .contacto-info {
+    font-size: 1rem; }
+  .input {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    margin-left: 1px;
+    padding: 0.5rem;
+    width: 40vw;
+    margin-right: 2rem;
+    font-size: 1rem; }
+  textarea {
+    width: 85vw;
+    height: 150px; }
+  .butenviar {
+    left: 37vw; }
+  .img {
+    background-image: url("../img/casamiento.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh; }
+  .sec-padre {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+    margin: 2rem 1rem; }
+  .tufiesta {
+    flex-direction: column-reverse; }
+  .eleg-text {
+    min-height: 159px; }
+  .sec-padre iframe {
+    height: 48vh; }
+  .estamos-padre h1 {
+    padding-top: 0;
+    padding-bottom: 5rem;
+    margin-top: 3rem; }
+  .estamos-padre iframe {
+    width: 100vw;
+    height: calc(100vw/1.77); }
+  .footer {
+    flex-direction: column;
+    align-items: center; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .img {
+    background-image: url("../img/casamiento.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh; }
+  .sec-padre {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+    margin: 2rem 1rem; }
+  .input {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    margin-left: 1px;
+    padding: 0.5rem;
+    width: 30vw;
+    margin-right: 2rem;
+    font-size: 1rem; }
+  .butenviar {
+    left: 28vw; }
+  textarea {
+    width: 63.5vw;
+    height: 150px; }
+  .tufiesta {
+    flex-direction: column-reverse; }
+  .eleg-text {
+    min-height: 159px; }
+  .eleg-text h1 {
+    font-size: 4rem; }
+  .eleg-text p {
+    font-size: 2rem; }
+  .sec-padre iframe {
+    height: 62vh; }
+  .estamos-padre h1 {
+    font-size: 3.5rem;
+    padding-top: 0;
+    padding-bottom: 4rem;
+    margin-top: 3rem; }
+  .estamos-padre iframe {
+    width: 100vw;
+    height: calc(100vw/1.77); }
+  .footer {
+    flex-direction: column;
+    align-items: center; } }
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .equipo-uno div {
+    margin: 0 1.5rem; }
+  .equipo-dos div {
+    margin: 0 1.5rem; }
+  .img {
+    background-image: url("../img/casamiento.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh; }
+  .sec-padre {
+    padding: 1rem;
+    gap: 2rem;
+    margin: 2rem 1rem; }
+  .input {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    margin-left: 1px;
+    padding: 0.5rem;
+    width: 25vw;
+    margin-right: 2rem;
+    font-size: 1rem; }
+  .butenviar {
+    left: 24vw; }
+  textarea {
+    width: 52.5vw;
+    height: 150px; }
+  .eleg-text {
+    min-height: 159px; }
+  .eleg-text h1 {
+    font-size: 3.5rem; }
+  .eleg-text p {
+    font-size: 1.5rem; }
+  .sec-padre iframe {
+    height: 45vh; }
+  .estamos-padre h1 {
+    padding-top: 0;
+    padding-bottom: 5rem;
+    margin-top: 3rem; }
+  .estamos-padre iframe {
+    width: 100vw;
+    height: calc(75vw/1.77); } }
