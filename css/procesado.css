@@ -110,8 +110,6 @@ input:focus, textarea:focus {
 header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   grid-area: header;
   margin-bottom: 50px;
   text-align: center; }
@@ -123,7 +121,6 @@ header {
     display: inline-block;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-top: 2px;
     line-height: 1.2; }
   header .navLink {
     text-decoration: none;
@@ -165,7 +162,7 @@ header {
   left: 1px; }
 
 .carrusel-main {
-  margin-bottom: 3rem; }
+  margin-bottom: 5rem; }
 
 .carousel-caption h1 {
   color: rgba(0, 0, 0, 0.699);
@@ -210,16 +207,15 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 5rem; }
+  margin-bottom: 5rem; }
 
 .estamos-padre iframe {
   width: 60%;
   height: 70vh; }
 
 .estamos-padre h1 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  margin-top: 3rem; }
+  margin-bottom: 5rem;
+  margin-top: 5rem; }
 
 .nuestrosServicios {
   display: flex;
@@ -249,25 +245,8 @@ header {
 .marginbottom {
   margin-bottom: 5rem; }
 
-.likes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  font-size: 2rem;
-  top: -13rem;
-  color: white;
-  filter: drop-shadow(1px 1px 5px black);
-  max-width: 150px;
-  margin: auto;
-  visibility: hidden; }
-  .likes i {
-    position: relative;
-    top: -.5rem;
-    padding: .2rem; }
-
 .gal-item img:hover {
-  filter: blur(2px); }
+  transform: scale(1.4); }
 
 .gal-item h1 {
   font-family: 'Dancing Script', cursive;
@@ -281,14 +260,12 @@ header {
   color: white;
   padding-bottom: 2.4rem; }
 
-.gal-item img:hover + .likes {
-  visibility: visible; }
-
 .gal-item p {
   padding-left: 1.5rem; }
 
 .gal-item img {
-  width: 100%; }
+  width: 100%;
+  transition: transform .5s ease; }
 
 .mainflex {
   display: flex;
@@ -459,7 +436,8 @@ p {
   font-size: 1.5rem; }
   .footer ul {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-bottom: 0; }
   .footer ul li {
     margin-left: 2rem; }
   .footer a {
@@ -472,6 +450,8 @@ p {
     font-weight: bold; }
   .footer span:hover {
     color: #f3d8c7; }
+  .footer p {
+    margin-bottom: 0; }
 
 footer hr {
   width: 100%; }
@@ -524,9 +504,6 @@ footer hr {
     height: 150px; }
   .butenviar {
     left: 7rem; }
-  .likes {
-    top: -14rem;
-    left: 8rem; }
   .tufiesta {
     flex-direction: column-reverse; }
   .eleg-text {
@@ -704,7 +681,7 @@ footer hr {
   .sec-padre {
     padding: 1rem;
     gap: 2rem;
-    margin: 2rem 1rem; }
+    margin: 5rem 1rem; }
   .input {
     margin-top: 1rem;
     margin-bottom: 2.5rem;
@@ -724,12 +701,9 @@ footer hr {
     font-size: 3.5rem; }
   .eleg-text p {
     font-size: 1.5rem; }
-  .sec-padre iframe {
-    height: 45vh; }
   .estamos-padre h1 {
-    padding-top: 0;
-    padding-bottom: 5rem;
-    margin-top: 3rem; }
+    margin-bottom: 5rem;
+    margin-top: 5rem; }
   .estamos-padre iframe {
     width: 100vw;
     height: calc(75vw/1.77); } }

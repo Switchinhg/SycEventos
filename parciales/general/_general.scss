@@ -85,7 +85,7 @@ p{
     ul {
         display: flex;
         flex-wrap: wrap;
-    
+        margin-bottom: 0;
     }
     ul li{
         margin-left: 2rem;
@@ -96,16 +96,17 @@ p{
     }
     a:hover{
         color: $coloroscuro;
-        
     }
     span{
         color: $coloroscuro;
         font-weight: bold;
-        
     }
     
     span:hover{
         color: $colorclaro;
+    }
+    p{
+        margin-bottom: 0;
     }
 
 }
