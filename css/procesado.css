@@ -245,27 +245,31 @@ header {
 .marginbottom {
   margin-bottom: 5rem; }
 
-.gal-item img:hover {
-  transform: scale(1.4); }
+.row > * {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 0; }
 
-.gal-item h1 {
-  font-family: 'Dancing Script', cursive;
-  font-weight: bold;
-  padding-top: 2rem;
-  font-size: 2.2rem;
-  position: relative;
-  text-align: center;
-  top: -5rem;
-  background-color: #d0b8ac;
-  color: white;
-  padding-bottom: 2.4rem; }
-
-.gal-item p {
-  padding-left: 1.5rem; }
-
-.gal-item img {
-  width: 100%;
-  transition: transform .5s ease; }
+.gal-item {
+  margin: 1rem;
+  overflow: hidden; }
+  .gal-item img:hover {
+    transform: scale(1.4); }
+  .gal-item h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 2.2rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
+    padding: 1.5rem;
+    background-color: #d0b8ac;
+    color: white; }
+  .gal-item p {
+    padding-left: 1.5rem; }
+  .gal-item img {
+    width: 100%;
+    transition: transform .5s ease; }
 
 .mainflex {
   display: flex;
