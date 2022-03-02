@@ -128,6 +128,7 @@
     .pleft{
         padding-left: 5rem;
     }
+
     .marginbottom{
         margin-bottom: 5rem;
     }
@@ -142,32 +143,47 @@
         margin: 1rem;
         overflow: hidden;
 
-        img:hover{
-            transform: scale(1.4);
-        }
         h1{
             font-family: 'Dancing Script', cursive;
             font-weight: bold;
             
-            font-size: 2.2rem;
+            font-size: 2rem;
             position: absolute;
-            bottom: 1rem;
+            bottom: -1rem;
             right: 0;
             padding: 1.5rem ;
-            background-color: $coloroscuro;
+            background-color: $colorOscuroRGBA;
             color: white;
+
         
         }
 
         p {
             padding-left: 1.5rem;
         }
-        img{
-            width: 100%;
-            transition: transform .5s ease;
-        }
+
     
     }
+    .container{
+        margin-bottom: 5rem;
+    }
+
+    @each $nombre in 1,2,3,4,5,6,7,8,9,10,11,12  {
+            .imgGaleria#{$nombre}{
+                width: 100%;
+                height: 400px;
+                background-image:url(../../img/galeria_#{$nombre}.jpg);
+                background-size:cover ;
+                position: relative;
+                overflow: hidden;
+                transition: transform .5s ease;
+        }
+        .imgGaleria#{$nombre}:hover{
+            transform: scale(1.4);
+        }
+        
+    }
+
 
     .mainflex{
         display: flex;

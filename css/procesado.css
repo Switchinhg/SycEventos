@@ -57,12 +57,21 @@ footer {
 .boton:hover {
   background-color: #d0b8ac; }
 
+.modal {
+  top: -1rem;
+  overflow: hidden; }
+
 .modal-backdrop {
   z-index: -1;
   background-color: transparent; }
 
+ol, ul {
+  padding-left: 0rem; }
+
 .modal-content {
-  left: 0.5rem; }
+  left: 1.4rem;
+  height: 350px;
+  width: 456px; }
 
 .btnmodal {
   text-decoration: none;
@@ -253,23 +262,165 @@ header {
 .gal-item {
   margin: 1rem;
   overflow: hidden; }
-  .gal-item img:hover {
-    transform: scale(1.4); }
   .gal-item h1 {
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
-    font-size: 2.2rem;
+    font-size: 2rem;
     position: absolute;
-    bottom: 1rem;
+    bottom: -1rem;
     right: 0;
     padding: 1.5rem;
-    background-color: #d0b8ac;
+    background-color: rgba(208, 184, 172, 0.8);
     color: white; }
   .gal-item p {
     padding-left: 1.5rem; }
-  .gal-item img {
-    width: 100%;
-    transition: transform .5s ease; }
+
+.container {
+  margin-bottom: 5rem; }
+
+.imgGaleria1 {
+  width: 100%;
+  height: 400px;
+  background-image: url(../../img/galeria_1.jpg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: transform .5s ease; }
+
+.imgGaleria1:hover {
+  transform: scale(1.4); }
+
+.imgGaleria2 {
+  width: 100%;
+  height: 400px;
+  background-image: url(../../img/galeria_2.jpg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: transform .5s ease; }
+
+.imgGaleria2:hover {
+  transform: scale(1.4); }
+
+.imgGaleria3 {
+  width: 100%;
+  height: 400px;
+  background-image: url(../../img/galeria_3.jpg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: transform .5s ease; }
+
+.imgGaleria3:hover {
+  transform: scale(1.4); }
+
+.imgGaleria4 {
+  width: 100%;
+  height: 400px;
+  background-image: url(../../img/galeria_4.jpg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: transform .5s ease; }
+
+.imgGaleria4:hover {
+  transform: scale(1.4); }
+
+.imgGaleria5 {
+  width: 100%;
+  height: 400px;
+  background-image: url(../../img/galeria_5.jpg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: transform .5s ease; }
+
+.imgGaleria5:hover {
+  transform: scale(1.4); }
+
+.imgGaleria6 {
+  width: 100%;
+  height: 400px;
+  background-image: url(../../img/galeria_6.jpg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: transform .5s ease; }
+
+.imgGaleria6:hover {
+  transform: scale(1.4); }
+
+.imgGaleria7 {
+  width: 100%;
+  height: 400px;
+  background-image: url(../../img/galeria_7.jpg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: transform .5s ease; }
+
+.imgGaleria7:hover {
+  transform: scale(1.4); }
+
+.imgGaleria8 {
+  width: 100%;
+  height: 400px;
+  background-image: url(../../img/galeria_8.jpg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: transform .5s ease; }
+
+.imgGaleria8:hover {
+  transform: scale(1.4); }
+
+.imgGaleria9 {
+  width: 100%;
+  height: 400px;
+  background-image: url(../../img/galeria_9.jpg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: transform .5s ease; }
+
+.imgGaleria9:hover {
+  transform: scale(1.4); }
+
+.imgGaleria10 {
+  width: 100%;
+  height: 400px;
+  background-image: url(../../img/galeria_10.jpg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: transform .5s ease; }
+
+.imgGaleria10:hover {
+  transform: scale(1.4); }
+
+.imgGaleria11 {
+  width: 100%;
+  height: 400px;
+  background-image: url(../../img/galeria_11.jpg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: transform .5s ease; }
+
+.imgGaleria11:hover {
+  transform: scale(1.4); }
+
+.imgGaleria12 {
+  width: 100%;
+  height: 400px;
+  background-image: url(../../img/galeria_12.jpg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: transform .5s ease; }
+
+.imgGaleria12:hover {
+  transform: scale(1.4); }
 
 .mainflex {
   display: flex;
@@ -430,6 +581,10 @@ p {
 
 .chico {
   font-size: 2.5rem; }
+
+.marcartexto {
+  font-weight: bold;
+  font-style: italic; }
 
 .footer {
   display: flex;
@@ -669,6 +824,10 @@ footer hr {
   .footer {
     flex-direction: column;
     align-items: center; } }
+
+@media only screen and (min-width: 1400px) {
+  .gal-item h1 {
+    left: -1rem; } }
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
   .equipo-uno div {

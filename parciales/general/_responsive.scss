@@ -348,6 +348,16 @@
         align-items: center;
     }
 }
+@media only screen and (min-width: 1400px){
+
+    .gal-item{
+        h1{
+            left: -1rem;
+        }
+    }
+
+}
+
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px){
 

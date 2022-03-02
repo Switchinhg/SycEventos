@@ -75,13 +75,22 @@ footer{
     
 }
 
+.modal{
+    top: -1rem;
+    overflow: hidden;
+}
 .modal-backdrop {
     z-index: -1;
     background-color: transparent;
     
 }
+ol, ul {
+    padding-left: 0rem;
+}
 .modal-content{
-    left: 0.5rem;
+    left: 1.4rem;
+    height: 350px;
+    width: 456px;
 }
 .btnmodal{
     text-decoration: none;
