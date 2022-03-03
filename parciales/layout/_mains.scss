@@ -256,23 +256,17 @@
             border-radius: 50%;
             font-size: 1.5rem;
         }
-    }
+    }    
     .dir {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include posinconcontact;
         
     }
     .telf {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include posinconcontact;
         
     }
     .mail {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include posinconcontact;
         
     }
 
@@ -316,4 +310,10 @@
         padding-right: 1rem;
         
     }
+}
+.botoncompra{
+    @extend .boton;
+    width: 100px;
+    
+    margin: 2rem auto;
 }

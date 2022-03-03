@@ -111,6 +111,11 @@ ol, ul {
     transform: skew(-10deg);
 }
 
+@mixin posinconcontact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 hr{
     width: 80vw;
     text-align: center;

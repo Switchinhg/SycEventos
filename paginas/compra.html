@@ -44,18 +44,25 @@
         
 
             <form action="" class="compracontainer">
+
             <div class="compra-serv">
 
-                <label for="servicios">Servicios*</label>
-                <input type="text" placeholder="Escribe..." list="servicios">
-                <datalist id="servicios">
-                    <option value="Lugares"></option>
-                    <option value="Catering"></option>
-                    <option value="Fotografia"></option>
-                    <option value="Decoración"></option>
-                    <option value="DJ"></option>
-                    <option value="Paquetes"></option>
-                </datalist>
+
+                <label for="compraservicios">Servicio a comprar</label>
+                    <select name="compraservicios" id="compraservicios">
+                        <optgroup label="Servicios">
+                            <option value="Lugares">Lugar</option>
+                            <option value="Catering">Catering</option>
+                            <option value="Fotografia">Fotografía</option>
+                            <option value="Decoración">Decoracón</option>
+                            <option value="DJ">DJ</option>
+                        </optgroup>
+                        <optgroup label="Paquetes">
+                            <option value="Paquete1">Paquete 1</option>
+                            <option value="Paquete2">Paquete 2</option>
+                            <option value="Paquete3">Paquete 3</option>
+                        </optgroup>
+                    </select>
                 
             </div>
             <div class="compra-serv">
@@ -81,7 +88,7 @@
             </div>
             <div id="liveAlertPlaceholder"></div>
 
-            <button type="submit" class="boton"  id="liveAlertBtn">Pagar</button>
+            <button type="submit" class="botoncompra"  id="liveAlertBtn">Pagar</button>
 
         </form>
         

@@ -42,7 +42,7 @@
 footer {
   grid-area: footer; }
 
-.boton {
+.boton, .botoncompra {
   color: black;
   background-color: white;
   border: solid black 1px;
@@ -54,7 +54,7 @@ footer {
   position: relative;
   top: -1rem; }
 
-.boton:hover {
+.boton:hover, .botoncompra:hover {
   background-color: #d0b8ac; }
 
 .modal {
@@ -523,6 +523,10 @@ textarea {
   display: flex; }
   .compra-serv label {
     padding-right: 1rem; }
+
+.botoncompra {
+  width: 100px;
+  margin: 2rem auto; }
 
 .titulo {
   display: flex;
