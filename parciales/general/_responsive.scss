@@ -14,14 +14,14 @@
 
 
 
-    .img{
-        background-image: url("../img/casamiento.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 50vh;
+    .carousel-caption{
+        padding-top:0 ;
+        padding-bottom: 0;
     }
+    .carousel-caption h1,h2{
+        font-size: 1rem;
+    }
+
     .nuestrosServicios h1{
         text-align: center;
     }
@@ -121,7 +121,6 @@
 
     .estamos-padre h1{
         padding-top: 0;
-        padding-bottom: 5rem;
         margin-top: 3rem;
     }
     
@@ -131,6 +130,26 @@
         height: calc(100vw/1.77);
     }
 
+    .caja-size{
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+    .serv-caja p{
+        font-size: 1rem;
+        padding: 0.2rem 0;
+    }
+    .pleft{
+        padding-left: 2rem;
+    }
+    .modal-content{
+        left: 0;
+        top: 1rem;
+        width: auto;
+    }
+
+    .modal-body p{
+        font-size: 1rem;
+    }
     
 
     .footer{
@@ -144,18 +163,18 @@
 }
 
 @media only screen and (min-width: 401px) and (max-width: 768px){
-    .img{
-        background-image: url("../img/casamiento.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 50vh;
-        
-    }
-
 
     
+        .carousel-caption{
+            padding-top:0 ;
+            padding-bottom: 0;
+        }
+        .carousel-caption h1,h2{
+            font-size: 1rem;
+        }
+        
+        
+
         .mainflex{
             flex-direction: column;
             align-items: center;
@@ -217,15 +236,7 @@
         left: 37vw;
     }
         
-    .img{
-        background-image: url("../img/casamiento.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 50vh;
-        
-    }
+
     .sec-padre{
         
         flex-direction: column;
@@ -251,13 +262,36 @@
 
     .estamos-padre h1{
         padding-top: 0;
-        padding-bottom: 5rem;
         margin-top: 3rem;
     }
     
     .estamos-padre iframe{
         width: 100vw;
         height: calc(100vw/1.77);
+    }
+
+    .modal-body p{
+        font-size: 1rem;
+    }
+    .centradoymarg{
+        max-width: 700px;
+        text-align:center ;   
+    }
+    .serv-caja p{
+        font-size: 1rem;
+    }
+    .modal-content{
+        left: 0;
+        top: 1rem;
+        width: auto;
+        
+    }
+    .modal-dialog{
+        overflow: hidden;
+    }
+
+    .modal-body p{
+        font-size: 1rem;
     }
 
 
@@ -272,15 +306,10 @@
 
 @media only screen and (min-width: 769px) and (max-width: 1024px){
 
-    .img{
-        background-image: url("../img/casamiento.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 70vh;
-        
+    .carousel-caption{
+        bottom: 38%;
     }
+    
     .sec-padre{
         
         flex-direction: column;
@@ -317,10 +346,10 @@
         
     }
     .eleg-text h1{
-        font-size: 4rem;
+        font-size: calc(1.5rem + 1.5vw);
     }
     .eleg-text p{
-        font-size: 2rem;
+        font-size: calc(1.325rem + .9vw);
     }
     .sec-padre iframe{
         
@@ -368,15 +397,6 @@
     }
     .equipo-dos div{
             margin: 0 1.5rem;
-    }
-    .img{
-        background-image: url("../img/casamiento.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 70vh;
-        
     }
     .sec-padre{
         

@@ -124,6 +124,7 @@
         font-family: 'Dancing Script', cursive;
         margin-left: 0.5rem;
     }
+  
     
     .pleft{
         padding-left: 5rem;
@@ -172,7 +173,7 @@
             .imgGaleria#{$nombre}{
                 width: 100%;
                 height: 400px;
-                background-image:url("/comision29190/img/galeria_#{$nombre}.jpg");
+                background-image:url("../img/galeria_#{$nombre}.jpg");
                 background-size:cover ;
                 position: relative;
                 overflow: hidden;
