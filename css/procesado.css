@@ -615,8 +615,9 @@ p {
   .footer a:hover {
     color: #d0b8ac; }
   .footer span {
-    color: #d0b8ac;
-    font-weight: bold; }
+    color: #f3d8c7;
+    font-weight: bold;
+    text-shadow: black 1px 1px 2px; }
   .footer span:hover {
     color: #f3d8c7; }
   .footer p {

@@ -37,16 +37,18 @@
 
     <hr>
     <main>
+        <!-- titulo y parrafo  -->
         <div class="titulo">
             <h1>Compra</h1>
             <p>¿qué vas a comprar?</p>
         </div>
-        
+
+        <!-- formulario de compra -->
 
             <form action="" class="compracontainer">
 
+                <!-- Dropdown de eleccion de servicio a comprar -->
             <div class="compra-serv">
-
 
                 <label for="compraservicios">Servicio a comprar</label>
                     <select name="compraservicios" id="compraservicios">
@@ -65,34 +67,39 @@
                     </select>
                 
             </div>
+            <!-- dirección -->
             <div class="compra-serv">
                 <label for="direccion">Dirección</label> 
                 <input type="text" name="" id="direccion">
 
             </div>
+            <!-- Email -->
             <div class="compra-serv">
                 <label for="mail">Email *</label>
                 <input type="email" id="mail" required>
             </div>
 
+            <!-- Tarjeta de credito -->
             <div class="compra-serv">
                 <label for="credito">Tarjeta de credito *</label>
                 <input type="number" name="credito" id="credito" minlength="16" required>
                 <label for="ccv">CCV*</label>
                 <input type="number" name="" id="ccv" minlength="3"required>
             </div>
-            
+            <!-- Fecha del evento -->
             <div class="compra-serv">
                 <label for="fecha">Fecha de evento* </label>
                 <input type="date" name="fecha" id="fecha">
             </div>
+            <!-- Banner de compra realizada -->
             <div id="liveAlertPlaceholder"></div>
 
+            <!-- Boton de comprar -->
             <button type="submit" class="botoncompra"  id="liveAlertBtn">Pagar</button>
 
         </form>
         
-
+            <!-- JS de Boton de compra -->
         <script>
             var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
             var alertTrigger = document.getElementById('liveAlertBtn')
@@ -114,7 +121,7 @@
 
         
     
-        <footer >
+        <footer>
             <hr>
             <div class="footer">
                 <p>Copyright 2022 - Creado por <a href="https://www.instagram.com/santiago.f.lopez/" target="_blank"><span> Santiago Font </span></a>  </p>
